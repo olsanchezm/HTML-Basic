@@ -14,8 +14,9 @@ body{
     position: relative;
     width: 100%;
 }
+
 .menu{
-    position:absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -29,9 +30,9 @@ body{
  /* .btn-menu {display: flex;} */
 
 .btn-menu{
-    position: absolute;
-    top: 50px;
-    left: 40px;
+    position: fixed;
+    top: 2%;
+    left: 2%;
     display: block;
     color:#fff;
     font-size: 40px;
@@ -39,10 +40,10 @@ body{
 }
 
 .menu .logomain { 
-    height: 150px; 
+    height: 100%; 
     user-select: none;
     position: absolute;
-    left: 45%;
+    left: 47%;
     top: 0px;
 }
 .menu .logobox{margin-left: 30px; font-family: 'Lobster'}
@@ -57,9 +58,9 @@ body{
 
 .menu .list-container{
     position: absolute;
-    top: 150px;
+    top: 100%;
     left: -100%;
-    width: 15%;
+    width: 20%;
     height: calc(100vh - 60px);
     background: #000;
     border-top: 3px solid #fff;
@@ -96,7 +97,8 @@ body{
 
 /** Img header **/
 .img-header{
-    background: url(../img/Nheader.jpg);
+    /** background: url(../img/Nheader.jpg); **/
+    background: url(../img/FondoPollo.mp4); /**buscar la manera de que se pueda colocar ese video **/
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
