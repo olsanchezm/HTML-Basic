@@ -1,0 +1,83 @@
+@media only screen and (max-width:804px) {
+    .menu{
+        position:absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 80px;
+        background: #000;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index:9999;
+    }
+    .menu .logomain { 
+        height: 60px; 
+        user-select: none; 
+        position: absolute;
+        top: 10px;
+        left: 40%;        
+    }
+    /** Navegation Menu **/
+    .btn-menu{
+        position: absolute;
+        top: 18px;
+        left: 20px;
+        display: block;
+        color:#fff;
+        font-size: 30px;
+        cursor: pointer;
+    }
+    .menu .list-container{
+        position: absolute;
+        top: 80px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 60px);
+        background: #000;
+        border-top: 3px solid #fff;
+    }
+    .menu .list-container .lists{
+        display: block;
+        width: 90%;
+        margin:50px auto;
+    }
+    .menu .list-container .lists li{
+        display: flex;
+        justify-content: center;
+        border-bottom: 2px solid #fff;
+    }
+    .menu .list-container .lists li a{
+        margin:5px 0px;
+    }
+
+    /** Img Header **/
+    .img-header .welcome{
+        width: 80%;
+        margin:auto;
+    }
+    .img-header .welcome h4{
+        font-size: 30px;
+        line-height: 45px;
+    }
+    .img-header .welcome > h2 a{
+        font-size: 40px;
+    }
+
+    /** About Us **/
+    .about-us .info h3{font-size: 35px;}
+    .about-us .info p{font-size: 18px;}
+
+    /** Gallery **/
+    .gallery-content{
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(12, 350px);
+        grid-gap: 20px;
+    }
+
+    /** Modal **/
+    .modal #imgModal{
+        width: 95%;
+        height: 55%;
+    }
+}
