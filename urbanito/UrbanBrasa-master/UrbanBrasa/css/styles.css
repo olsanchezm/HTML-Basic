@@ -14,9 +14,8 @@ body{
     position: relative;
     width: 100%;
 }
-
 .menu{
-    position: fixed;
+    position: fixed;    
     top: 0;
     left: 0;
     width: 100%;
@@ -97,8 +96,7 @@ body{
 
 /** Img header **/
 .img-header{
-    /** background: url(../img/Nheader.jpg); **/
-    background: url(../img/FondoPollo.mp4); /**buscar la manera de que se pueda colocar ese video **/
+    background: url(../img/Nheader.jpg);
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -132,6 +130,55 @@ body{
 }
 .img-header .welcome > h2 a > i{color:#f8b30e; margin-right: 10px;}
 
+
+video{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.section h1 {
+    text-align: center;
+    font-size: 6rem;
+    font-family: "Lobster";
+    color: #0cb02d;
+    padding: 20px;
+    margin: 15px;
+    z-index: 1;    
+  }
+  
+  .video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  
+  .color-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: lightblue;
+    width: 100%;
+    height: 100vh;
+    opacity: 0.5;
+  }
 
 /** About Us **/
 .about-us{width: 100%;}
